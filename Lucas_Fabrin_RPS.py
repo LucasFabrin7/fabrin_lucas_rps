@@ -56,42 +56,42 @@ def ycr():
     you_chose_rock_instance.setpos(you_chose_rock_pos_x,you_chose_rock_pos_y)
 
 def ycp():
-    # setup the scissors choosing gif using the os module as scissor image
+    # setup the paper choosing gif using the os module as paper image
     you_chose_paper_image = os.path.join(images_folder, 'you_chose_paper.gif')
-    # instantiate (create an instance of) the Turtle class for the rock
+    # instantiate (create an instance of) the Turtle class for the paper
     you_chose_paper_instance = turtle.Turtle()
-    # add the scissor choosing image as a shape
+    # add the paper choosing image as a shape
     screen.addshape(you_chose_paper_image)
-    # attach the scissor choosing_image to the rock_instance
+    # attach the paper choosing_image to the paper_instance
     you_chose_paper_instance.shape(you_chose_paper_image)
-    # remove the pen option from the scissor choosing_instance so it doesn't draw lines when moved
+    # remove the pen option from the paper choosing_instance so it doesn't draw lines when moved
     you_chose_paper_instance.penup()
-    # assign vars for scissor position
+    # assign vars for paper position
     you_chose_paper_pos_x = 0
     you_chose_paper_pos_y = 150
-    # set the position of the scissor choosing_instance
+    # set the position of the paper choosing_instance
     you_chose_paper_instance.setpos(you_chose_paper_pos_x,you_chose_paper_pos_y)
 
 def ycs():
-    # setup the paper choosing gif using the os module as paper image
+    # setup the scissors choosing gif using the os module as scissors image
     you_chose_scissors_image = os.path.join(images_folder, 'you_chose_scissors.gif')
-    # instantiate (create an instance of) the Turtle class for the paper choosing gif
+    # instantiate (create an instance of) the Turtle class for the scissors choosing gif
     you_chose_scissors_instance = turtle.Turtle()
-    # add the paper choosing image as a shape
+    # add the scissors choosing image as a shape
     screen.addshape(you_chose_scissors_image)
     # attach the scissor choosing image to the scissor_instance
     you_chose_scissors_instance.shape(you_chose_scissors_image)
-    # remove the pen option from the rock_instance so it doesn't draw lines when moved
+    # remove the pen option from the scissors_instance so it doesn't draw lines when moved
     you_chose_scissors_instance.penup()
-    # assign vars for paper position
+    # assign vars for scissors position
     you_chose_scissors_pos_x = 0
     you_chose_scissors_pos_y = 150
-    # set the position of the paper choosing instance
+    # set the position of the scissors choosing instance
     you_chose_scissors_instance.setpos(you_chose_scissors_pos_x,you_chose_scissors_pos_y)
 
 
  
-
+# sets up the canvas size (width + height) and the color
 screen = turtle.Screen()
 
 screen.setup(WIDTH + 4, HEIGHT + 8)  
